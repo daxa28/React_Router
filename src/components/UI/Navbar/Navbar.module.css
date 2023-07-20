@@ -1,0 +1,26 @@
+.navbar {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  background: #025167;
+  box-shadow: 1px 0px 29px 0px #fff;
+}
+
+.navbar__link {
+  margin-left: auto;
+  padding: 0 20px;
+}
+
+.link {
+  text-decoration: none;
+  padding: 0 15px;
+  color: #bef56e;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.link:hover {
+  text-shadow: 0 0 10px #bef56e;
+}

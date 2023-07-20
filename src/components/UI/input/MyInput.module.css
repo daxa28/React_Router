@@ -1,0 +1,15 @@
+.myInput {
+  width: 100%;
+  padding: 5px 15px;
+  margin: 5px 0;
+  border: 2px solid #057d9f;
+  background: #ffffff77;
+}
+
+.myInput:hover {
+  box-shadow: 0 0 3px #057d9f;
+}
+.myInput:focus {
+  border: 2px solid #057d9f;
+  outline-style: none;
+}

@@ -1,0 +1,86 @@
+.myBtn {
+  width: 7rem;
+  position: relative;
+  padding: 5px 15px;
+  display: inline-block;
+  color: #057d9f;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 2px;
+  transition: 0.2s;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  background: #bef56e;
+  overflow: hidden;
+  font-weight: 700;
+  margin: 10px 0;
+  box-shadow: 0 0 7px #057d9f;
+}
+
+.myBtn__line {
+  position: absolute;
+  display: block;
+}
+.myBtn__line__top {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #025167);
+  margin: 0;
+}
+
+.myBtn:hover .myBtn__line__top {
+  left: 100%;
+  transition: 1s;
+}
+
+.myBtn__line__bottom {
+  bottom: 0;
+  left: 100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #025167);
+  margin: 0;
+}
+
+.myBtn:hover .myBtn__line__bottom {
+  left: -100%;
+  transition: 1s;
+}
+
+.myBtn__line__right {
+  right: 0;
+  top: -100%;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #025167);
+  margin: 0;
+}
+
+.myBtn:hover .myBtn__line__right {
+  top: 100%;
+  transition: 1s;
+}
+
+.myBtn__line__left {
+  left: 0;
+  top: 100%;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(0deg, transparent, #025167);
+  margin: 0;
+}
+
+.myBtn:hover .myBtn__line__left {
+  top: -100%;
+  transition: 1s;
+}
+
+.myBtn:hover {
+  box-shadow: 0 0 10px #057d9f;
+  background-color: #025167;
+  color: #bef56e;
+  transition-delay: 0.5s;
+}

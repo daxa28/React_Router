@@ -1,0 +1,18 @@
+.mySelect {
+  margin: 0 10px;
+  background: #bef56e;
+  color: #057d9f;
+  border: 2px solid #057d9f;
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+  font-weight: 700;
+}
+
+.mySelect:hover {
+  box-shadow: 0 0 3px #057d9f;
+}
+
+.mySelect option {
+  font-weight: 700;
+}

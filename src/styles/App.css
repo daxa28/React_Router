@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  color: #025167;
+  background: url(../img/1644920507_1-abrakadabra-fun-p-myatnie-oboi-na-aifon-1.jpg);
+  background-size: 100%;
+  background-repeat: repeat;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App,
+.page_id_post {
+  width: 70%;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: "Caveat", cursive;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  font-family: "Rubik Mono One", sans-serif;
+  font-size: 29px;
+  margin: 40px 0 10px;
+  text-align: center;
+}
+
+h3 {
+  color: #025167;
+  display: flex;
+  justify-content: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.p__sort {
+  margin: 0 5px;
+  color: #057d9f;
+  font-weight: 600;
+  font-size: 18px;
+  vertical-align: center;
+}
+
+.post {
+  display: flex;
+  padding: 15px;
+  border: 2px solid #057d9f;
+  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff96;
+}
+
+.post:hover {
+  box-shadow: 0 0 7px #057d9f;
+}
+
+.remove-btn {
+  margin-right: 0.5rem;
+}
+
+.post-enter {
+  transform: translateX(-350px);
+}
+
+.post-enter-active {
+  transform: translateX(0px);
+  transition: all 500ms ease-in;
+}
+
+.post-exit {
+  opacity: 1;
+}
+
+.post-exit-active {
+  transform: translateX(-350px);
+  transition: all 500ms ease-in;
+}
+
+.post__btns {
+  display: flex;
+  padding: 0 5px;
+  flex-wrap: wrap;
+}
+
+.post__content {
+  width: 45rem;
+}
+
+.post-one {
+  padding: 15px;
+  border: 2px solid #057d9f;
+  margin: 20px 0;
+  align-items: center;
+  background: #ffffff77;
+}
+
+.comment {
+  background: #bff56ea4;
+  padding: 15px;
+  border: 2px solid #13981e;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.comment h4 {
+  color: #057d9f;
+}
