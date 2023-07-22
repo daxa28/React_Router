@@ -1,70 +1,107 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# React_Router
 
-In the project directory, you can run:
+#### Данное приложение реализовано с помощью JavaScript-библиотеки – React, для просмотра, записи и редактирования личных постов.
+
+<p>
+<b>#</b> Данное приложение реализовано с помощью <b>JavaScript</b>
+-библиотеки – <b>React</b>, для просмотра, записи и редактирования
+личных постов.
+<br />
+<br />
+<b>#</b> При разработке приложения были изучены следующие темы:
+<br />- Что такое <b>React</b> и для чего он нужен;
+<br />- Расширение языка <b>JavaScript</b> – <b>JSX</b>;
+<br />- Функциональные и классовые компоненты;
+<br />- Хуки (<b>useState</b> - работа с состоянием, <b>useEffect</b>,{" "}
+<b>useRef</b>, <b>useMemo</b>, <b>useContext</b>, создание кастомных
+хуков);
+<br />- Работа с <b>CSS</b> стилями в <b>React</b>;
+<br />- <b>Props</b>. Аргументы компонента;
+<br />- Управляемые и неуправляемые компоненты;
+<br />- Инструменты разработчика <b>React</b>;
+<br />- Обмен данными между компонентами;
+<br />- <b>Axios</b>. Работа с сервером;
+<br />- Жизненный цикл компонента;
+<br />- Постраничный вывод – пагинация;
+<br />- <b>React router</b>. Постраничная навигация.
+<br />
+<br />
+<b>#</b> В ходе работы было реализовано:
+<br />- <b>Постраничная навигация</b> (навигационная панель) с
+наличием главной страницы, страницы для просмотра и редактирования
+личных постов, а также с наличием страницы для входа в личный кабинет.
+(маршрутизация по страницам осуществлена с помощью библиотеки{" "}
+<b>React Router</b>).
+<br />- <b>Главная страница</b> с отображением описания приложения.
+<br />- <b>Страница с лентой</b> личных постов, которые пользователь
+может увидеть только после авторизации в личном кабинете.
+<br />- <b>Страница личного кабинета</b> с авторизацией (хук{" "}
+<b>useContext</b>, глобальные данные, запись в <b>localStorage</b>).
+<br />- Реализован необходимый{" "}
+<b>функционал для создания, чтения и удаления</b> постов, также
+реализована сортировка, поиск и пагинация на странице постов (создана
+небольшая библиотека UI компонентов, кнопка, выпадающий список,
+модальное окно и т.д., использование хука useMemo для мемоизации).
+<br />- <b>Страница просмотра выбранного поста</b>, загрузка с сервера
+и отображение комментариев к посту (хук <b>useNavigate</b> из{" "}
+<b>react-router-dom</b>). 
+<br/>
+<br/>
+<b>Вывод</b>: Использование <b>React</b> упрощает процесс
+создания приложения, он ориентирован на компонентный подход в
+разработке и решает задачу быстродействия приложения, делая его более
+быстрым и менее ресурсоемким благодаря использованию виртуального <b>DOM</b>.
+<b>React</b> обеспечивает масштабируемость и скорость при создании и
+отображении пользовательских интерфейсов.
+</p>
+
+### Главная страница 
+
+#### _screenshot(1)_
+
+<img src="./photo_for_readme/1.png" width="700">
+
+#### _screenshot(2)_
+
+<img src="./photo_for_readme/2.png" width="700">
+
+### Страница постов без входа в личный аккаунт 
+
+#### _screenshot(1)_
+
+<img src="./photo_for_readme/3.png" width="700">
+
+### Страница для входа в личный аккаунт  
+
+#### _screenshot(1)_
+
+<img src="./photo_for_readme/4.png" width="700">
+
+#### _screenshot(2)_
+
+<img src="./photo_for_readme/5.png" width="700">
+
+### Страница постов с входом в личный аккаунт 
+
+#### _screenshot(1)_
+
+<img src="./photo_for_readme/6.png" width="700">
+
+#### _screenshot(2)_
+
+<img src="./photo_for_readme/7.png" width="700">
+
+### Страница поста с комментариями 
+
+#### _screenshot(1)_
+
+<img src="./photo_for_readme/8.png" width="700">
+
+
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
