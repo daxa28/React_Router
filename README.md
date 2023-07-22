@@ -14,7 +14,7 @@
 <br />- Что такое <b>React</b> и для чего он нужен;
 <br />- Расширение языка <b>JavaScript</b> – <b>JSX</b>;
 <br />- Функциональные и классовые компоненты;
-<br />- Хуки (<b>useState</b> - работа с состоянием, <b>useEffect</b>,{" "}
+<br />- Хуки (<b>useState</b> - работа с состоянием, <b>useEffect</b>,
 <b>useRef</b>, <b>useMemo</b>, <b>useContext</b>, создание кастомных
 хуков);
 <br />- Работа с <b>CSS</b> стилями в <b>React</b>;
